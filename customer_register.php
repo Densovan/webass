@@ -36,7 +36,7 @@
                         <a href="customer_register.php">Register</a>
                     </li>
                     <li>
-                        <a href="checkout.php">My Account</a>
+                        <a href="my_account.php">My Account</a>
                     </li>
                     <li>
                         <a href="cart.php">Go To Cart</a>
@@ -297,7 +297,7 @@
 
                                 <label>Your Profile picture</label>
 
-                                <input type="file" class="form-control" name="c_image" required>
+                                <input type="file" class="form-control form-height-custom" name="c_image" required>
 
                             </div><!-- form-group Finish -->
 
