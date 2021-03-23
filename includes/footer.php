@@ -71,7 +71,7 @@
         </div>
     </div>
 </div>
-<div id="copyrigth">
+<div id="copyright">
     <div class="container">
         <div class="col-md-6">
             <p class="pull-left hello">&copy; 2021 Sovanden Store</p>
