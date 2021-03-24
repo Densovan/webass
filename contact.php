@@ -36,7 +36,7 @@
                         <a href="customer_register.php">Register</a>
                     </li>
                     <li>
-                        <a href="my_account.php">My Account</a>
+                        <a href="customer/my_account.php">My Account</a>
                     </li>
                     <li>
                         <a href="cart.php">Go To Cart</a>
@@ -104,7 +104,7 @@
                             <a href="shop.php">Shop</a>
                         </li>
                         <li>
-                            <a href="checkout.php">My Account</a>
+                            <a href="customer/my_account.php">My Account</a>
                         </li>
                         <li>
                             <a href="cart.php">Shopping Cart</a>
@@ -274,7 +274,7 @@
 
                                 <button type="submit" name="submit" class="btn btn-primary">
 
-                                    <i class="fa fa-user-md"></i>Send Message
+                                    <i class="fa fa-user-md"></i> Send Message
 
                                 </button>
 

@@ -36,7 +36,7 @@
                         <a href="customer_register.php">Register</a>
                     </li>
                     <li>
-                        <a href="my_account.php">My Account</a>
+                        <a href="customer/my_account.php">My Account</a>
                     </li>
                     <li>
                         <a href="cart.php">Go To Cart</a>
@@ -104,7 +104,7 @@
                             <a href="shop.php">Shop</a>
                         </li>
                         <li>
-                            <a href="checkout.php">My Account</a>
+                            <a href="customer/my_account.php">My Account</a>
                         </li>
                         <li>
                             <a href="cart.php">Shopping Cart</a>
@@ -218,15 +218,7 @@
                         <center>
                             <!-- center Begin -->
 
-                            <h2> Register a new account</h2>
-
-                            <p class="text-muted">
-                                <!-- text-muted Begin -->
-
-                                If you have any questions, feel free to contact us. Our Customer Service work
-                                <strong>24/7</strong>
-
-                            </p><!-- text-muted Finish -->
+                            <h2> Register a new account </h2>
 
                         </center><!-- center Finish -->
 
@@ -256,7 +248,7 @@
 
                                 <label>Your Password</label>
 
-                                <input type="password" class="form-control" name="c_password" required>
+                                <input type="password" class="form-control" name="c_pass" required>
 
                             </div><!-- form-group Finish -->
 
@@ -268,6 +260,7 @@
                                 <input type="text" class="form-control" name="c_country" required>
 
                             </div><!-- form-group Finish -->
+
                             <div class="form-group">
                                 <!-- form-group Begin -->
 
@@ -276,6 +269,7 @@
                                 <input type="text" class="form-control" name="c_city" required>
 
                             </div><!-- form-group Finish -->
+
                             <div class="form-group">
                                 <!-- form-group Begin -->
 
@@ -284,6 +278,7 @@
                                 <input type="text" class="form-control" name="c_contact" required>
 
                             </div><!-- form-group Finish -->
+
                             <div class="form-group">
                                 <!-- form-group Begin -->
 
@@ -292,22 +287,22 @@
                                 <input type="text" class="form-control" name="c_address" required>
 
                             </div><!-- form-group Finish -->
+
                             <div class="form-group">
                                 <!-- form-group Begin -->
 
-                                <label>Your Profile picture</label>
+                                <label>Your Profile Picture</label>
 
                                 <input type="file" class="form-control form-height-custom" name="c_image" required>
 
                             </div><!-- form-group Finish -->
-
 
                             <div class="text-center">
                                 <!-- text-center Begin -->
 
                                 <button type="submit" name="register" class="btn btn-primary">
 
-                                    <i class="fa fa-user-md"></i>Register
+                                    <i class="fa fa-user-md"></i> Register
 
                                 </button>
 

@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>M-Dev Store</title>
-    <!-- <link href="/styles/style.css" rel="stylesheet" type="text/css" media="all"> -->
-    <!-- <noscript> -->
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <!-- </noscript> -->
 </head>
 
 <body>
@@ -107,7 +104,7 @@
                             <a href="shop.php">Shop</a>
                         </li>
                         <li>
-                            <a href="checkout.php">My Account</a>
+                            <a href="customer/my_account.php">My Account</a>
                         </li>
                         <li>
                             <a href="cart.php">Shopping Cart</a>
@@ -180,223 +177,330 @@
     </div><!-- navbar navbar-default Finish -->
 
     <div id="content">
+        <!-- #content Begin -->
         <div class="container">
+            <!-- container Begin -->
             <div class="col-md-12">
+                <!-- col-md-12 Begin -->
+
                 <ul class="breadcrumb">
+                    <!-- breadcrumb Begin -->
                     <li>
                         <a href="index.php">Home</a>
                     </li>
                     <li>
                         Shop
                     </li>
-                </ul>
-            </div>
+                </ul><!-- breadcrumb Finish -->
+
+            </div><!-- col-md-12 Finish -->
+
             <div class="col-md-3">
-                <?php
-    include("includes/sidebar.php")
+                <!-- col-md-3 Begin -->
+
+                <?php 
+    
+    include("includes/sidebar.php");
+    
     ?>
-            </div>
+
+            </div><!-- col-md-3 Finish -->
+
             <div class="col-md-9">
+                <!-- col-md-9 Begin -->
                 <div class="box">
+                    <!-- box Begin -->
                     <h1>Shop</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolores esse quo doloremque enim
-                        explicabo repudiandae, cumque natus error nobis consectetur sapiente voluptate magnam blanditiis
-                        soluta. Rerum ut dignissimos dolorem.</p>
-                </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo deleniti accusamus,
+                        consequuntur illum quasi ut. Voluptate a, ipsam repellendus ut fugiat minima? Id facilis itaque
+                        autem, officiis veritatis perferendis, quaerat!
+                    </p>
+                </div><!-- box Finish -->
+
                 <div class="row">
+                    <!-- row Begin -->
                     <div class="col-md-4 col-sm-6 center-responsive">
+                        <!-- col-md-4 col-sm-6 center-responsive Begin -->
+
                         <div class="product">
+                            <!-- product Begin -->
+
                             <a href="details.php">
-                                <img class="img-responsive"
-                                    src="admin_area/product_images/Linux-Kernel-5.8-Reaches-EOL-Users-Advised-to-Upgrade-to-Linux-5.9-Series.png"
-                                    alt="product 1">
+
+                                <img class="img-responsive" src="admin_area/product_images/product-1.jpg"
+                                    alt="Product 1">
+
                             </a>
+
                             <div class="text">
+                                <!-- text Begin -->
+
                                 <h3>
                                     <a href="details.php">
-                                        M-Dev Logo T-shirt
+                                        M-Dev Woman T-Shirt
                                     </a>
                                 </h3>
-                                <p class="price">
-                                    $38
-                                </p>
+
+                                <p class="price">$30</p>
+
                                 <p class="button">
-                                    <a href="details.php" class="btn btn-default">
-                                        View Details
-                                    </a>
-                                    <a href="" class="btn btn-primary">
-                                        <i class="fa fa-shopping-cart">
-                                            Add To Cart
-                                        </i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 center-responsive">
-                        <div class="product">
-                            <a href="details.php">
-                                <img class="img-responsive"
-                                    src="admin_area/product_images/Linux-Kernel-5.8-Reaches-EOL-Users-Advised-to-Upgrade-to-Linux-5.9-Series.png"
-                                    alt="product 1">
-                            </a>
-                            <div class="text">
-                                <h3>
-                                    <a href="details.php">
-                                        M-Dev Logo T-shirt
-                                    </a>
-                                </h3>
-                                <p class="price">
-                                    $38
-                                </p>
-                                <p class="button">
-                                    <a href="details.php" class="btn btn-default">
-                                        View Details
-                                    </a>
-                                    <a href="" class="btn btn-primary">
-                                        <i class="fa fa-shopping-cart">
-                                            Add To Cart
-                                        </i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 center-responsive">
-                        <div class="product">
-                            <a href="details.php">
-                                <img class="img-responsive"
-                                    src="admin_area/product_images/Linux-Kernel-5.8-Reaches-EOL-Users-Advised-to-Upgrade-to-Linux-5.9-Series.png"
-                                    alt="product 1">
-                            </a>
-                            <div class="text">
-                                <h3>
-                                    <a href="details.php">
-                                        M-Dev Logo T-shirt
-                                    </a>
-                                </h3>
-                                <p class="price">
-                                    $38
-                                </p>
-                                <p class="button">
-                                    <a href="details.php" class="btn btn-default">
-                                        View Details
-                                    </a>
-                                    <a href="" class="btn btn-primary">
-                                        <i class="fa fa-shopping-cart">
-                                            Add To Cart
-                                        </i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 center-responsive">
-                        <div class="product">
-                            <a href="details.php">
-                                <img class="img-responsive"
-                                    src="admin_area/product_images/Linux-Kernel-5.8-Reaches-EOL-Users-Advised-to-Upgrade-to-Linux-5.9-Series.png"
-                                    alt="product 1">
-                            </a>
-                            <div class="text">
-                                <h3>
-                                    <a href="details.php">
-                                        M-Dev Logo T-shirt
-                                    </a>
-                                </h3>
-                                <p class="price">
-                                    $38
-                                </p>
-                                <p class="button">
-                                    <a href="details.php" class="btn btn-default">
-                                        View Details
-                                    </a>
+
+                                    <a href="details.php" class="btn btn-default">View Details</a>
+
                                     <a href="details.php" class="btn btn-primary">
+
                                         <i class="fa fa-shopping-cart">
                                             Add To Cart
                                         </i>
+
                                     </a>
+
                                 </p>
-                            </div>
-                        </div>
-                    </div>
+
+                            </div><!-- text Finish -->
+
+                        </div><!-- product Finish -->
+
+                    </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
                     <div class="col-md-4 col-sm-6 center-responsive">
+                        <!-- col-md-4 col-sm-6 center-responsive Begin -->
+
                         <div class="product">
+                            <!-- product Begin -->
+
                             <a href="details.php">
-                                <img class="img-responsive"
-                                    src="admin_area/product_images/Linux-Kernel-5.8-Reaches-EOL-Users-Advised-to-Upgrade-to-Linux-5.9-Series.png"
-                                    alt="product 1">
+
+                                <img class="img-responsive" src="admin_area/product_images/product-2.jpg"
+                                    alt="Product 1">
+
                             </a>
+
                             <div class="text">
+                                <!-- text Begin -->
+
                                 <h3>
                                     <a href="details.php">
-                                        M-Dev Logo T-shirt
+                                        M-Dev Woman T-Shirt
                                     </a>
                                 </h3>
-                                <p class="price">
-                                    $38
-                                </p>
+
+                                <p class="price">$30</p>
+
                                 <p class="button">
-                                    <a href="details.php" class="btn btn-default">
-                                        View Details
-                                    </a>
-                                    <a href="" class="btn btn-primary">
+
+                                    <a href="details.php" class="btn btn-default">View Details</a>
+
+                                    <a href="details.php" class="btn btn-primary">
+
                                         <i class="fa fa-shopping-cart">
                                             Add To Cart
                                         </i>
+
                                     </a>
+
                                 </p>
-                            </div>
-                        </div>
-                    </div>
+
+                            </div><!-- text Finish -->
+
+                        </div><!-- product Finish -->
+
+                    </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
                     <div class="col-md-4 col-sm-6 center-responsive">
+                        <!-- col-md-4 col-sm-6 center-responsive Begin -->
+
                         <div class="product">
+                            <!-- product Begin -->
+
                             <a href="details.php">
-                                <img class="img-responsive"
-                                    src="admin_area/product_images/Linux-Kernel-5.8-Reaches-EOL-Users-Advised-to-Upgrade-to-Linux-5.9-Series.png"
-                                    alt="product 1">
+
+                                <img class="img-responsive" src="admin_area/product_images/Product-3b.jpg"
+                                    alt="Product 1">
+
                             </a>
+
                             <div class="text">
+                                <!-- text Begin -->
+
                                 <h3>
                                     <a href="details.php">
-                                        M-Dev Logo T-shirt
+                                        M-Dev Woman T-Shirt
                                     </a>
                                 </h3>
-                                <p class="price">
-                                    $38
-                                </p>
+
+                                <p class="price">$30</p>
+
                                 <p class="button">
-                                    <a href="details.php" class="btn btn-default">
-                                        View Details
-                                    </a>
-                                    <a href="" class="btn btn-primary">
+
+                                    <a href="details.php" class="btn btn-default">View Details</a>
+
+                                    <a href="details.php" class="btn btn-primary">
+
                                         <i class="fa fa-shopping-cart">
                                             Add To Cart
                                         </i>
+
                                     </a>
+
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                            </div><!-- text Finish -->
+
+                        </div><!-- product Finish -->
+
+                    </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
+                    <div class="col-md-4 col-sm-6 center-responsive">
+                        <!-- col-md-4 col-sm-6 center-responsive Begin -->
+
+                        <div class="product">
+                            <!-- product Begin -->
+
+                            <a href="details.php">
+
+                                <img class="img-responsive" src="admin_area/product_images/Product-4a.jpg"
+                                    alt="Product 1">
+
+                            </a>
+
+                            <div class="text">
+                                <!-- text Begin -->
+
+                                <h3>
+                                    <a href="details.php">
+                                        M-Dev Woman T-Shirt
+                                    </a>
+                                </h3>
+
+                                <p class="price">$30</p>
+
+                                <p class="button">
+
+                                    <a href="details.php" class="btn btn-default">View Details</a>
+
+                                    <a href="details.php" class="btn btn-primary">
+
+                                        <i class="fa fa-shopping-cart">
+                                            Add To Cart
+                                        </i>
+
+                                    </a>
+
+                                </p>
+
+                            </div><!-- text Finish -->
+
+                        </div><!-- product Finish -->
+
+                    </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
+                    <div class="col-md-4 col-sm-6 center-responsive">
+                        <!-- col-md-4 col-sm-6 center-responsive Begin -->
+
+                        <div class="product">
+                            <!-- product Begin -->
+
+                            <a href="details.php">
+
+                                <img class="img-responsive" src="admin_area/product_images/Product-5a.jpg"
+                                    alt="Product 1">
+
+                            </a>
+
+                            <div class="text">
+                                <!-- text Begin -->
+
+                                <h3>
+                                    <a href="details.php">
+                                        M-Dev Woman T-Shirt
+                                    </a>
+                                </h3>
+
+                                <p class="price">$30</p>
+
+                                <p class="button">
+
+                                    <a href="details.php" class="btn btn-default">View Details</a>
+
+                                    <a href="details.php" class="btn btn-primary">
+
+                                        <i class="fa fa-shopping-cart">
+                                            Add To Cart
+                                        </i>
+
+                                    </a>
+
+                                </p>
+
+                            </div><!-- text Finish -->
+
+                        </div><!-- product Finish -->
+
+                    </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
+                    <div class="col-md-4 col-sm-6 center-responsive">
+                        <!-- col-md-4 col-sm-6 center-responsive Begin -->
+
+                        <div class="product">
+                            <!-- product Begin -->
+
+                            <a href="details.php">
+
+                                <img class="img-responsive" src="admin_area/product_images/Product-6a.jpg"
+                                    alt="Product 1">
+
+                            </a>
+
+                            <div class="text">
+                                <!-- text Begin -->
+
+                                <h3>
+                                    <a href="details.php">
+                                        M-Dev Woman T-Shirt
+                                    </a>
+                                </h3>
+
+                                <p class="price">$30</p>
+
+                                <p class="button">
+
+                                    <a href="details.php" class="btn btn-default">View Details</a>
+
+                                    <a href="details.php" class="btn btn-primary">
+
+                                        <i class="fa fa-shopping-cart">
+                                            Add To Cart
+                                        </i>
+
+                                    </a>
+
+                                </p>
+
+                            </div><!-- text Finish -->
+
+                        </div><!-- product Finish -->
+
+                    </div><!-- col-md-4 col-sm-6 center-responsive Finish -->
+                </div><!-- row Finish -->
+
                 <center>
                     <ul class="pagination">
                         <li><a href="#">First Page</a></li>
                         <li><a href="#">1</a></li>
                         <li><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
                         <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
                         <li><a href="#">Last Page</a></li>
                     </ul>
                 </center>
-            </div>
-        </div>
-    </div>
 
+            </div><!-- col-md-9 Finish -->
 
-    <?php
-    include("includes/footer.php")
+        </div><!-- container Finish -->
+    </div><!-- #content Finish -->
+
+    <?php 
+    
+    include("includes/footer.php");
+    
     ?>
 
     <script src="js/jquery-331.min.js"></script>
