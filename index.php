@@ -14,6 +14,7 @@ include("includes/db.php");
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
