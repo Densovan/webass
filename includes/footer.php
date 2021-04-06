@@ -38,11 +38,23 @@
 
                 <ul>
                     <!-- ul Begin -->
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Coats</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">T-Shirts</a></li>
+                    <?php
+                   
+    $get_p_cats = "select * from product_categories";
+    $run_p_cats = mysqli_query($con,$get_p_cats);
+    while($row_p_cats = mysqli_fetch_array($run_p_cats)){
+        $p_cat_id = $row_p_cats['p_cat_id'];
+        $p_cat_title = $row_p_cats['p_cat_title'];
+
+        echo"
+        <li>
+        <a href='shop.php?$p_cat_id'>$p_cat_title</a>
+        
+        </li>
+        ";
+
+    }
+                   ?>
                 </ul><!-- ul Finish -->
 
                 <hr class="hidden-md hidden-lg">
@@ -57,12 +69,12 @@
                 <p>
                     <!-- p Start -->
 
-                    <strong>M-Dev Media inc.</strong>
+                    <strong>Sarim Sovanden Media inc.</strong>
                     <br />Cibubur
                     <br />Ciracas
-                    <br />0818-0683-3157
-                    <br />mugianto4th@gmail.com
-                    <br /><strong>MrGhie</strong>
+                    <br />086-28-00-18
+                    <br />sarimsovanden@gmail.com
+                    <br /><strong>Sarim Sovanden</strong>
 
                 </p><!-- p Finish -->
 
@@ -122,13 +134,13 @@
         <div class="col-md-6">
             <!-- col-md-6 Begin -->
 
-            <p class="pull-left">&copy; 2018 M-Dev Store All Rights Reserve</p>
+            <p class="pull-left">&copy; 2021 Sovanden Store All Rights Reserve</p>
 
         </div><!-- col-md-6 Finish -->
         <div class="col-md-6">
             <!-- col-md-6 Begin -->
 
-            <p class="pull-right">Theme by: <a href="#">MrGhie</a></p>
+            <p class="pull-right">Theme by: <a href="#">Sarim Sovanden</a></p>
 
         </div><!-- col-md-6 Finish -->
     </div><!-- container Finish -->
