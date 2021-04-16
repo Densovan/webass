@@ -1,3 +1,23 @@
+<?php 
+
+session_start();
+
+if(!isset($_SESSION['customer_email'])){
+    
+    echo "<script>window.open('../checkout.php','_self')</script>";
+    
+}else{
+
+include("includes/db.php");
+include("functions/functions.php");
+    
+if(isset($_GET['order_id'])){
+    
+    $order_id = $_GET['order_id'];
+    
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,8 +41,24 @@
             <div class="col-md-6 offer">
                 <!-- col-md-6 offer Begin -->
 
-                <a href="#" class="btn btn-success btn-sm">Welcome</a>
-                <a href="checkout.php">4 Items In Your Cart | Total Price: $300 </a>
+                <a href="#" class="btn btn-success btn-sm">
+
+                    <?php 
+                   
+                   if(!isset($_SESSION['customer_email'])){
+                       
+                       echo "Welcome: Guest";
+                       
+                   }else{
+                       
+                       echo "Welcome: " . $_SESSION['customer_email'] . "";
+                       
+                   }
+                   
+                   ?>
+
+                </a>
+                <a href="checkout.php"> <?php items(); ?> Items In Your Cart | Total Price: <?php total_price(); ?> </a>
 
             </div><!-- col-md-6 offer Finish -->
 
@@ -42,7 +78,23 @@
                         <a href="../cart.php">Go To Cart</a>
                     </li>
                     <li>
-                        <a href="../checkout.php">Login</a>
+                        <a href="../checkout.php">
+
+                            <?php 
+                           
+                           if(!isset($_SESSION['customer_email'])){
+                       
+                                echo "<a href='checkout.php'> Login </a>";
+
+                               }else{
+
+                                echo " <a href='logout.php'> Log Out </a> ";
+
+                               }
+                           
+                         ?>
+
+                        </a>
                     </li>
 
                 </ul><!-- menu Finish -->
@@ -62,7 +114,7 @@
             <div class="navbar-header">
                 <!-- navbar-header Begin -->
 
-                <a href="index.php" class="navbar-brand home">
+                <a href="../index.php" class="navbar-brand home">
                     <!-- navbar-brand home Begin -->
 
                     <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
@@ -117,12 +169,12 @@
 
                 </div><!-- padding-nav Finish -->
 
-                <a href="cart.php" class="btn navbar-btn btn-primary right">
+                <a href="../cart.php" class="btn navbar-btn btn-primary right">
                     <!-- btn navbar-btn btn-primary Begin -->
 
                     <i class="fa fa-shopping-cart"></i>
 
-                    <span>4 Items In Your Cart</span>
+                    <span><?php items(); ?> Items In Your Cart</span>
 
                 </a><!-- btn navbar-btn btn-primary Finish -->
 
@@ -214,7 +266,8 @@
 
                     <h1 align="center"> Please confirm your payment</h1>
 
-                    <form action="confirm.php" method="post" enctype="multipart/form-data">
+                    <form action="confirm.php?update_id='<?php echo $order_id;  ?>'" method="post"
+                        enctype="multipart/form-data">
                         <!-- form Begin -->
 
                         <div class="form-group">
@@ -265,7 +318,7 @@
                         <div class="form-group">
                             <!-- form-group Begin -->
 
-                            <label> Omni Paisa / East Paisa: </label>
+                            <label> Omni Paisa / Easy Paisa: </label>
 
                             <input type="text" class="form-control" name="code" required>
 
@@ -314,3 +367,4 @@
 </body>
 
 </html>
+<?php } ?>

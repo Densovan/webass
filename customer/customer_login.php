@@ -100,6 +100,7 @@ if(isset($_POST['login'])){
     if($check_customer==1 AND $check_cart==0){
         
         $_SESSION['customer_email']=$customer_email;
+        $_SESSION['customer_name']=$customer_name;
         
        echo "<script>alert('You are Logged in')</script>"; 
         
@@ -108,6 +109,7 @@ if(isset($_POST['login'])){
     }else{
         
         $_SESSION['customer_email']=$customer_email;
+         $_SESSION['customer_name']=$customer_name;
         
        echo "<script>alert('You are Logged in')</script>"; 
         
