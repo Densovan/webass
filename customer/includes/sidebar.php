@@ -19,7 +19,7 @@
         $customer_name = $row_customer['customer_name'];
         
         if(!isset($_SESSION['customer_email'])){
-            
+            echo"<h1>Please Login to your account</h1>";
         }else{
             
             echo "
@@ -104,7 +104,7 @@
 
             <li>
 
-                <a href="logout.php">
+                <a href="../logout.php">
 
                     <i class="fa fa-sign-out"></i> Log Out
 

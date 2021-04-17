@@ -71,6 +71,19 @@ if(isset($_GET['pro_id'])){
                 <a href="#" class="btn btn-success btn-sm">
 
                     <?php 
+
+$customer_session = $_SESSION['customer_email'];
+        
+        $get_customer = "select * from customers where customer_email='$customer_session'";
+        
+        $run_customer = mysqli_query($con,$get_customer);
+        
+        $row_customer = mysqli_fetch_array($run_customer);
+        
+        $customer_image = $row_customer['customer_image'];
+        
+        $customer_name = $row_customer['customer_name'];
+
                    
                    if(!isset($_SESSION['customer_email'])){
                        
@@ -78,7 +91,8 @@ if(isset($_GET['pro_id'])){
                        
                    }else{
                        
-                       echo "Welcome: " . $_SESSION['customer_email'] . "";
+                    //    echo "Welcome: " . $_SESSION['customer_email'] . "";
+                    echo"Welcome : $customer_name";
                        
                    }
                    
@@ -115,7 +129,7 @@ if(isset($_GET['pro_id'])){
 
                                }else{
 
-                                echo " <a href='logout.php'> Log Out </a> ";
+                                echo " <a href='../logout.php'> Log Out </a> ";
 
                                }
                            
