@@ -1,4 +1,4 @@
-<div class="panel panel-default sidebar-menu">
+<div class="panel  sidebar-menu">
     <!-- panel panel-default sidebar-menu Begin -->
     <div class="panel-heading">
         <!-- panel-heading Begin -->
@@ -18,7 +18,7 @@
 </div><!-- panel panel-default sidebar-menu Finish -->
 
 
-<div class="panel panel-default sidebar-menu">
+<div class="panel  sidebar-menu">
     <!-- panel panel-default sidebar-menu Begin -->
     <div class="panel-heading">
         <!-- panel-heading Begin -->

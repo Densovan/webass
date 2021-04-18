@@ -12,14 +12,14 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background: #f0f0f0;
+  /* background: #f0f0f0; */
+  background-color: #f0f2f5;
   overflow-x: hidden;
 }
 
 /* Top Styles */
 
 #top {
-  /* background: #555555; */
   background-color: #337ab7;
   padding: 10px 0;
 }
@@ -129,10 +129,11 @@ body {
 .box {
   background: #ffffff;
   margin: 0 0 30px;
-  border: solid 1px #e6e6e6;
+  /* border: solid 1px #e6e6e6; */
   box-sizing: border-box;
   padding: 20px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 #advantages .box .icon {
   position: absolute;
@@ -155,7 +156,8 @@ body {
   z-index: 2;
 }
 #advantages .box h3 a {
-  color: #4fbfa8;
+  /* color: #4fbfa8; */
+  color: #337ab7;
 }
 #advantages .box h3 a:hover {
   text-decoration: none;
@@ -171,9 +173,12 @@ body {
 #hot h2 {
   font-size: 36px;
   font-weight: 400;
-  color: #4fbfa8;
+  /* color: #4fbfa8; */
+  color: #337ab7;
+  font-weight: 800;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 #content {
   padding-left: 25px;
@@ -188,10 +193,13 @@ body {
   }
 }
 #content .product {
-  background: #ffffff;
+  background: #fff;
+  border-radius: 12px;
   border: solid 1px #e6e6e6;
   margin-bottom: 30px;
   box-sizing: border-box;
+  border: 2px solid transparent;
+  /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); */
 }
 #content .product .text {
   padding: 10px 10px 0px;
@@ -215,7 +223,20 @@ body {
 #content .product .text h3 a {
   color: rgb(85, 85, 85);
 }
-
+.product-shop {
+  background: #ffffff;
+  border-radius: 12px;
+  /* border: solid 1px #e6e6e6; */
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+/* #content .product:hover {
+  border: 3px solid #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15),
+    0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.5s ease;
+} */
 /*  Breadcrumb Styles  */
 
 .breadcrumb {
@@ -239,7 +260,8 @@ body {
 /*  Products Categories & Categories Styles */
 #content .panel.sidebar-menu {
   box-sizing: border-box;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 #content .panel.sidebar-menu ul.nav.category-menu {
   margin-bottom: 20px;
@@ -251,6 +273,10 @@ body {
 #content .panel.sidebar-menu h3 {
   padding: 5px 0px;
   margin: 0px;
+}
+.panel-heading {
+  background-color: #4c99db;
+  color: white;
 }
 
 /*  Shop Products Tyles  */
@@ -350,7 +376,8 @@ body {
 /*  Footer Styles  */
 
 #footer {
-  background: #e0e0e0;
+  /* background: #e0e0e0; */
+  background-color: #fff;
   padding: 20px 0;
 }
 #footer a {
@@ -398,3 +425,28 @@ body {
 #copyright p {
   margin: 0px;
 }
+.btn-name-top {
+  background-color: #5297d2;
+}
+.add-to-card {
+  background-color: #0c518d;
+  color: white;
+}
+.view-detail {
+  background-color: #5297d2;
+  color: white;
+}
+.btn-name-cart {
+  background-color: #5297d2;
+  color: white;
+}
+/* li > a:hover {
+  text-decoration: none !important;
+  background-color: #e6f7ff !important;
+} */
+/* .img-zoom:hover {
+  -ms-transform: scale(0.5);
+  -webkit-transform: scale(0.5); 
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+} */

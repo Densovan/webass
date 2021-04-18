@@ -101,7 +101,7 @@
                         <div class="text-center">
                             <!-- text-center Begin -->
 
-                            <button type="submit" name="submit" class="btn btn-primary">
+                            <button type="submit" name="submit" class="btn add-to-card">
 
                                 <i class="fa fa-user-md"></i> Send Message
 

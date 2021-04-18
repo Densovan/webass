@@ -89,7 +89,7 @@ function getPro(){
             
                 <a href='details.php?pro_id=$pro_id'>
                 
-                    <img class='img-responsive' src='admin_area/product_images/$pro_img1'>
+                    <img class='img-responsive img-zoom' src='admin_area/product_images/$pro_img1'>
                 
                 </a>
                 
@@ -113,13 +113,13 @@ function getPro(){
                     
                     <p class='button'>
                     
-                        <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
+                        <a class='btn view-detail' href='details.php?pro_id=$pro_id'>
 
                             View Details
 
                         </a>
                     
-                        <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
+                        <a class='btn add-to-card' href='details.php?pro_id=$pro_id'>
 
                             <i class='fa fa-shopping-cart'></i> Add to Cart
 
@@ -301,13 +301,13 @@ function getpcatpro(){
                     
                     <p class='button'>
                     
-                        <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
+                        <a class='btn view-detail' href='details.php?pro_id=$pro_id'>
 
                             View Details
 
                         </a>
                     
-                        <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
+                        <a class='btn add-to-card' href='details.php?pro_id=$pro_id'>
 
                             <i class='fa fa-shopping-cart'></i> Add to Cart
 
@@ -426,13 +426,13 @@ function getcatpro(){
 
                             <p class='buttons'>
 
-                                <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
+                                <a class='btn view-detail' href='details.php?pro_id=$pro_id'>
 
                                 View Details
 
                                 </a>
 
-                                <a class='btn btn-primary' href='details.php?pro_id=$pro_id'>
+                                <a class='btn add-to-card' href='details.php?pro_id=$pro_id'>
 
                                 <i class='fa fa-shopping-cart'></i> Add To Cart
 

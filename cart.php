@@ -201,7 +201,7 @@
 
                             </button><!-- btn btn-default Finish -->
 
-                            <a href="checkout.php" class="btn btn-primary">
+                            <a href="checkout.php" class="btn add-to-card">
 
                                 Proceed Checkout <i class="fa fa-chevron-right"></i>
 

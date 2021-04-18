@@ -51,7 +51,7 @@ if(isset($_GET['pro_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>M-Dev Store</title>
+    <title>WEB E8 Store</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
     <link rel="stylesheet" href="font-awsome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -68,7 +68,7 @@ if(isset($_GET['pro_id'])){
             <div class="col-md-6 offer">
                 <!-- col-md-6 offer Begin -->
 
-                <a href="#" class="btn btn-success btn-sm">
+                <a href="#" class="btn btn-name-top btn-sm">
 
                     <?php 
 
@@ -210,7 +210,7 @@ $customer_session = $_SESSION['customer_email'];
 
                 </div><!-- padding-nav Finish -->
 
-                <a href="webass/cart.php" class="btn navbar-btn btn-primary right">
+                <a href="webass/cart.php" class="btn navbar-btn btn-name-cart right">
                     <!-- btn navbar-btn btn-primary Begin -->
 
                     <i class="fa fa-shopping-cart"></i>
@@ -222,7 +222,7 @@ $customer_session = $_SESSION['customer_email'];
                 <div class="navbar-collapse collapse right">
                     <!-- navbar-collapse collapse right Begin -->
 
-                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse"
+                    <button class="btn btn-name-cart navbar-btn" type="button" data-toggle="collapse"
                         data-target="#search">
                         <!-- btn btn-primary navbar-btn Begin -->
 
