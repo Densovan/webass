@@ -19,11 +19,13 @@ body {
 /* Top Styles */
 
 #top {
-  background: #555555;
+  /* background: #555555; */
+  background-color: #337ab7;
   padding: 10px 0;
 }
 #top .offer {
   color: #ffffff;
+  color: black;
 }
 #top .offer .btn {
   text-transform: uppercase;

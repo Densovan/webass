@@ -55,6 +55,7 @@
                            ?>
 
                     </li>
+                    <li><a href="../terms.php">Terms & Conditions</a></li>
                 </ul><!-- ul Finish -->
 
                 <hr class="hidden-md hidden-lg hidden-sm">
@@ -113,12 +114,11 @@
                 <p>
                     <!-- p Start -->
 
-                    <strong>M-Dev Media inc.</strong>
-                    <br />Cibubur
-                    <br />Ciracas
-                    <br />0818-0683-3157
+                    <strong>Team Web E8 inc.</strong>
+
+                    <br />086280018
                     <br />mugianto4th@gmail.com
-                    <br /><strong>MrGhie</strong>
+                    <br /><strong>Sarim Sovanden</strong>
 
                 </p><!-- p Finish -->
 
@@ -183,13 +183,13 @@
         <div class="col-md-6">
             <!-- col-md-6 Begin -->
 
-            <p class="pull-left">&copy; 2018 M-Dev Store All Rights Reserve</p>
+            <p class="pull-left">&copy; 2018 Team Web E8 All Rights Reserve</p>
 
         </div><!-- col-md-6 Finish -->
         <div class="col-md-6">
             <!-- col-md-6 Begin -->
 
-            <p class="pull-right">Theme by: <a href="#">MrGhie</a></p>
+            <p class="pull-right">Theme by: <a href="#">Team Web E8</a></p>
 
         </div><!-- col-md-6 Finish -->
     </div><!-- container Finish -->
