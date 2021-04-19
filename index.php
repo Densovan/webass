@@ -37,17 +37,12 @@
                        
                        $slide_name = $row_slides['slide_name'];
                        $slide_image = $row_slides['slide_image'];
-                       $slide_url = $row_slides['slide_url'];
                        
                        echo "
                        
                        <div class='item active'>
                        
-                           <a href='$slide_url'>
-
-                                <img src='admin_area/slides_images/$slide_image'>
-
-                           </a>
+                       <img src='admin_area/slides_images/$slide_image'>
                        
                        </div>
                        
@@ -63,17 +58,12 @@
                        
                        $slide_name = $row_slides['slide_name'];
                        $slide_image = $row_slides['slide_image'];
-                       $slide_url = $row_slides['slide_url'];
                        
                        echo "
                        
                        <div class='item'>
                        
-                           <a href='$slide_url'>
-
-                                <img src='admin_area/slides_images/$slide_image'>
-
-                           </a>
+                       <img src='admin_area/slides_images/$slide_image'>
                        
                        </div>
                        
@@ -188,25 +178,24 @@
 <div id="hot">
     <!-- #hot Begin -->
 
-    <!-- <div class="box"> -->
-    <!-- box Begin -->
+    <div class="box">
+        <!-- box Begin -->
 
-    <div class="container">
-        <!-- container Begin -->
+        <div class="container">
+            <!-- container Begin -->
 
-        <div class="col-md-12">
-            <!-- col-md-12 Begin -->
+            <div class="col-md-12">
+                <!-- col-md-12 Begin -->
 
-            <h2>
-                Our Latest Products
-            </h2>
+                <h2>
+                    Our Latest Products
+                </h2>
 
-        </div><!-- col-md-12 Finish -->
+            </div><!-- col-md-12 Finish -->
 
-    </div><!-- container Finish -->
+        </div><!-- container Finish -->
 
-    <!-- </div> -->
-    <!-- box Finish -->
+    </div><!-- box Finish -->
 
 </div><!-- #hot Finish -->
 

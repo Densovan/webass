@@ -178,7 +178,7 @@ $customer_session = $_SESSION['customer_email'];
 
                 </div><!-- padding-nav Finish -->
 
-                <a href="../cart.php" class="btn navbar-btn btn-primary right">
+                <a href="../cart.php" class="btn navbar-btn btn-name-cart right">
                     <!-- btn navbar-btn btn-primary Begin -->
 
                     <i class="fa fa-shopping-cart"></i>
@@ -190,7 +190,7 @@ $customer_session = $_SESSION['customer_email'];
                 <div class="navbar-collapse collapse right">
                     <!-- navbar-collapse collapse right Begin -->
 
-                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse"
+                    <button class="btn btn-name-cart navbar-btn" type="button" data-toggle="collapse"
                         data-target="#search">
                         <!-- btn btn-primary navbar-btn Begin -->
 

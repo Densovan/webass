@@ -70,6 +70,7 @@ if(isset($_GET['pro_id'])){
 
                 <a href="#" class="btn btn-name-top btn-sm">
 
+
                     <?php 
 
 $customer_session = $_SESSION['customer_email'];
@@ -227,7 +228,7 @@ $customer_session = $_SESSION['customer_email'];
                 <a href="cart.php" class="btn navbar-btn btn-name-cart right">
                     <!-- btn navbar-btn btn-primary Begin -->
 
-                    <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-shopping-cart "></i>
 
                     <span><?php items(); ?> Items In Your Cart</span>
 
@@ -236,7 +237,7 @@ $customer_session = $_SESSION['customer_email'];
                 <div class="navbar-collapse collapse right">
                     <!-- navbar-collapse collapse right Begin -->
 
-                    <button class="btn  btn-name-cart navbar-btn" type="button" data-toggle="collapse"
+                    <button class="btn btn-name-cart navbar-btn" type="button" data-toggle="collapse"
                         data-target="#search">
                         <!-- btn btn-primary navbar-btn Begin -->
 
