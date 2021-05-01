@@ -70,7 +70,7 @@ if(isset($_GET['pro_id'])){
             <div class="col-md-6 offer">
                 <!-- col-md-6 offer Begin -->
 
-                <a href="#" class="btn btn-success btn-sm">
+                <a href="#" class="btn btn-name-top btn-sm">
 
                     <?php 
                    
@@ -212,7 +212,7 @@ if(isset($_GET['pro_id'])){
 
                 </div><!-- padding-nav Finish -->
 
-                <a href="cart.php" class="btn navbar-btn btn-primary right">
+                <a href="cart.php" class="btn navbar-btn btn-name-cart right">
                     <!-- btn navbar-btn btn-primary Begin -->
 
                     <i class="fa fa-shopping-cart"></i>
@@ -224,7 +224,7 @@ if(isset($_GET['pro_id'])){
                 <div class="navbar-collapse collapse right">
                     <!-- navbar-collapse collapse right Begin -->
 
-                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse"
+                    <button class="btn btn-name-cart navbar-btn" type="button" data-toggle="collapse"
                         data-target="#search">
                         <!-- btn btn-primary navbar-btn Begin -->
 
@@ -411,7 +411,7 @@ if(isset($_GET['pro_id'])){
 
                                 <p class="price">$ <?php echo $pro_price; ?></p>
 
-                                <p class="text-center buttons"><button class="btn btn-primary i fa fa-shopping-cart">
+                                <p class="text-center buttons"><button class="btn btn-name-top i fa fa-shopping-cart">
                                         Add to cart</button></p>
 
                             </form><!-- form-horizontal Finish -->
