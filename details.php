@@ -146,8 +146,10 @@ if(isset($_GET['pro_id'])){
                 <a href="index.php" class="navbar-brand home">
                     <!-- navbar-brand home Begin -->
 
-                    <img src="images/ecom-store-logo.png" alt="WEB E8 Store Logo" class="hidden-xs">
-                    <img src="images/ecom-store-logo-mobile.png" alt="WEB E8 Store Logo Mobile" class="visible-xs">
+
+                    <img class="header-logo" src="images/logo2.png" alt="M-dev-Store Logo" class="hidden-xs">
+                    <!-- <img src="images/ecom-store-logo.png" alt="WEB E8 Store Logo" class="hidden-xs">
+                    <img src="images/ecom-store-logo-mobile.png" alt="WEB E8 Store Logo Mobile" class="visible-xs"> -->
 
                 </a><!-- navbar-brand home Finish -->
 

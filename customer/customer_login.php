@@ -109,7 +109,7 @@ if(isset($_POST['login'])){
     }else{
         
         $_SESSION['customer_email']=$customer_email;
-         $_SESSION['customer_name']=$customer_name;
+        $_SESSION['customer_name']=$customer_name;
         
        echo "<script>alert('You are Logged in')</script>"; 
         
