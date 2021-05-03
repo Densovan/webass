@@ -120,6 +120,7 @@
 
                             <?php } ?>
 
+
                         </tbody><!-- tbody finish -->
 
                     </table><!-- table table-striped table-bordered table-hover finish -->

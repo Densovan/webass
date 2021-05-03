@@ -125,7 +125,7 @@
                            
                            $sender_message = $_POST['message'];
                            
-                           $receiver_email = "mugianto4th@gmail.com";
+                           $receiver_email = "sarimramata@gmail.com";
                            
                            mail($receiver_email,$sender_name,$sender_subject,$sender_message,$sender_email);
                            

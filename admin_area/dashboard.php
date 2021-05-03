@@ -395,7 +395,7 @@
 
                 </div><!-- mb-md thumb-info finish -->
 
-                <div class="mb-md">
+                <div class="mb-md " style="margin-top: 12px;">
                     <!-- mb-md begin -->
                     <div class="widget-content-expanded">
                         <!-- widget-content-expanded begin -->

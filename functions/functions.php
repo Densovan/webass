@@ -98,9 +98,7 @@ function getPro(){
                     <h3>
             
                         <a href='details.php?pro_id=$pro_id'>
-
                             $pro_title
-
                         </a>
                     
                     </h3>
@@ -114,15 +112,11 @@ function getPro(){
                     <p class='button'>
                     
                         <a class='btn view-detail' href='details.php?pro_id=$pro_id'>
-
                             View Details
-
                         </a>
                     
                         <a class='btn add-to-card' href='details.php?pro_id=$pro_id'>
-
                             <i class='fa fa-shopping-cart'></i> Add to Cart
-
                         </a>
                     
                     </p>
