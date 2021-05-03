@@ -106,6 +106,7 @@ body {
 #search .navbar-form {
   float: right;
 }
+
 #search {
   clear: both;
   border-top: solid 1px #9adacd;
@@ -115,7 +116,7 @@ body {
   display: table;
 }
 #search .navbar-form .input-group .form-control {
-  width: 100%;
+  width: 100% !important;
 }
 #slider {
   margin-bottom: 40px;

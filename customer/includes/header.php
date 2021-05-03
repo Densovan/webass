@@ -245,7 +245,7 @@ $customer_session = $_SESSION['customer_email'];
                         <div class="input-group">
                             <!-- input-group Begin -->
 
-                            <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                            <input type="text" class="form-control " placeholder="Search" name="user_query" required>
 
                             <span class="input-group-btn">
                                 <!-- input-group-btn Begin -->
