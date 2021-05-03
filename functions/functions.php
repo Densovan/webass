@@ -514,6 +514,88 @@ function total_price(){
     
 }
 
+function search_product() {
+
+    if (isset($_POST['header_search'])) {
+        $database = mysqli_connect("localhost","root","","ecom_store");
+        $searchq = $_POST["header_search"];
+        // $searchq = preg_replace("#[^0-9a-z]#i","", $searchq);
+        $query = "SELECT * FROM products WHERE  product_title LIKE '%$searchq%'";
+
+        $row_products = mysqli_query($database, $query);
+        $count = mysqli_num_rows($row_products);
+        echo "How many products searched: ", $count;
+        $output = '';
+        if ($count == 0) {
+            $output = "There are no results";
+        }else {
+            while($row_products = mysqli_fetch_array($row_products)) {
+                $pro_id = $row_products['product_id'];
+        
+                $pro_title = $row_products['product_title'];
+                
+                $pro_price = $row_products['product_price'];
+                
+                $pro_img1 = $row_products['product_img1'];
+                
+                echo "
+                <div class='col-md-4 col-sm-6 single'>
+                
+                    <div class='product'>
+                    
+                        <a href='details.php?pro_id=$pro_id'>
+                        
+                            <img class='img-responsive img-zoom' src='admin_area/product_images/$pro_img1'>
+                        
+                        </a>
+                        
+                        <div class='text'>
+                        
+                            <h3>
+                    
+                                <a href='details.php?pro_id=$pro_id'>
+        
+                                    $pro_title
+        
+                                </a>
+                            
+                            </h3>
+                            
+                            <p class='price'>
+                            
+                                $ $pro_price
+                            
+                            </p>
+                            
+                            <p class='button'>
+                            
+                                <a class='btn view-detail' href='details.php?pro_id=$pro_id'>
+        
+                                    View Details
+        
+                                </a>
+                            
+                                <a class='btn add-to-card' href='details.php?pro_id=$pro_id'>
+        
+                                    <i class='fa fa-shopping-cart'></i> Add to Cart
+        
+                                </a>
+                            
+                            </p>
+                        
+                        </div>
+                    
+                    </div>
+                
+                </div>
+                
+                ";
+            }
+        }
+    
+    }
+}
+
 /// finish total_price functions ///
 
 ?>

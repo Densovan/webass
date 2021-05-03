@@ -199,21 +199,21 @@
 
 </div><!-- #hot Finish -->
 
-<div id="content" class="container">
-    <!-- container Begin -->
+    <div id="content" class="container">
+        <!-- container Begin -->
 
-    <div class="row">
-        <!-- row Begin -->
+        <div class="row">
+            <!-- row Begin -->
 
-        <?php 
-           
-           getPro();
-           
-           ?>
+            <?php 
+            
+            getPro();
+            
+            ?>
 
-    </div><!-- row Finish -->
+        </div><!-- row Finish -->
 
-</div><!-- container Finish -->
+    </div><!-- container Finish -->
 
 <?php 
     
