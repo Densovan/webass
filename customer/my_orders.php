@@ -1,3 +1,4 @@
+
 <center>
     <!--  center Begin  -->
 
@@ -14,7 +15,11 @@
 
 </center><!--  center Finish  -->
 
+<?php
+include "auth.php"; 
 
+echo $login_alert;
+?>
 <hr>
 
 

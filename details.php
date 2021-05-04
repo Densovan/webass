@@ -73,6 +73,19 @@ if(isset($_GET['pro_id'])){
                 <a href="#" class="btn btn-name-top btn-sm">
 
                     <?php 
+
+$customer_session = $_SESSION['customer_email'];
+        
+        $get_customer = "select * from customers where customer_email='$customer_session'";
+        
+        $run_customer = mysqli_query($con,$get_customer);
+        
+        $row_customer = mysqli_fetch_array($run_customer);
+        
+        $customer_image = $row_customer['customer_image'];
+        
+        $customer_name = $row_customer['customer_name'];
+
                    
                    if(!isset($_SESSION['customer_email'])){
                        
@@ -80,7 +93,8 @@ if(isset($_GET['pro_id'])){
                        
                    }else{
                        
-                       echo "Welcome: " . $_SESSION['customer_email'] . "";
+                    //    echo "Welcome: " . $_SESSION['customer_email'] . "";
+                    echo"Welcome: $customer_name";
                        
                    }
                    
@@ -484,7 +498,7 @@ if(isset($_GET['pro_id'])){
                     <!-- #row same-heigh-row Begin -->
                     <div class="col-md-3 col-sm-6">
                         <!-- col-md-3 col-sm-6 Begin -->
-                        <div class="box same-height headline">
+                        <div class=" same-height headline">
                             <!-- box same-height headline Begin -->
                             <h3 class="text-center">Products You Maybe Like</h3>
                         </div><!-- box same-height headline Finish -->

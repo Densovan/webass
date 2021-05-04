@@ -249,7 +249,7 @@
                 <!-- #row same-heigh-row Begin -->
                 <div class="col-md-3 col-sm-6">
                     <!-- col-md-3 col-sm-6 Begin -->
-                    <div class="box same-height headline">
+                    <div class="same-height headline">
                         <!-- box same-height headline Begin -->
                         <h3 class="text-center">Products You Maybe Like</h3>
                     </div><!-- box same-height headline Finish -->

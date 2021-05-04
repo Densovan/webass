@@ -2,9 +2,11 @@
     
     $active='Contact';
     include("includes/header.php");
-
+    include "sendmail.php";
 ?>
-
+<?php 
+    echo $alert;
+?>
 <div id="content">
     <!-- #content Begin -->
     <div class="container">
@@ -125,7 +127,7 @@
                            
                            $sender_message = $_POST['message'];
                            
-                           $receiver_email = "mugianto4th@gmail.com";
+                           $receiver_email = "sarimramata@gmail.com";
                            
                            mail($receiver_email,$sender_name,$sender_subject,$sender_message,$sender_email);
                            
@@ -161,7 +163,11 @@
     include("includes/footer.php");
     
     ?>
-
+<script type="text/javascript">
+    if (window.history.replaceState) {
+        window.history.replaceState(null, null, window.location.href);
+    }
+</script>
 <script src="js/jquery-331.min.js"></script>
 <script src="js/bootstrap-337.min.js"></script>
 </body>

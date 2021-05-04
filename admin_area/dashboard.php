@@ -12,7 +12,10 @@
     <!-- row no: 1 begin -->
     <div class="col-lg-12">
         <!-- col-lg-12 begin -->
+        <div class="row">
         <h1 class="page-header"> Dashboard </h1>
+        <?php echo $_SESSION["admin_msg"]; $_SESSION["admin_msg"] = ""; ?>
+        </div>
 
         <ol class="breadcrumb">
             <!-- breadcrumb begin -->
@@ -395,7 +398,7 @@
 
                 </div><!-- mb-md thumb-info finish -->
 
-                <div class="mb-md">
+                <div class="mb-md " style="margin-top: 12px;">
                     <!-- mb-md begin -->
                     <div class="widget-content-expanded">
                         <!-- widget-content-expanded begin -->

@@ -49,7 +49,7 @@
                        <div class='box'><!-- box Begin -->
                            <h1>Shop</h1>
                            <p>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo deleniti accusamus, consequuntur illum quasi ut. Voluptate a, ipsam repellendus ut fugiat minima? Id facilis itaque autem, officiis veritatis perferendis, quaerat!
+                              Get Free Shipping on all orders over $75 and free returns to our UK returns centre! Items are dispatched from the US and will arrive in 5-8 days.
                            </p>
                        </div><!-- box Finish -->
 

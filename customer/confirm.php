@@ -41,9 +41,22 @@ if(isset($_GET['order_id'])){
             <div class="col-md-6 offer">
                 <!-- col-md-6 offer Begin -->
 
-                <a href="#" class="btn btn-success btn-sm">
+                <a href="#" class="btn btn-name-top btn-sm">
 
                     <?php 
+
+$customer_session = $_SESSION['customer_email'];
+        
+        $get_customer = "select * from customers where customer_email='$customer_session'";
+        
+        $run_customer = mysqli_query($con,$get_customer);
+        
+        $row_customer = mysqli_fetch_array($run_customer);
+        
+        $customer_image = $row_customer['customer_image'];
+        
+        $customer_name = $row_customer['customer_name'];
+
                    
                    if(!isset($_SESSION['customer_email'])){
                        
@@ -51,7 +64,8 @@ if(isset($_GET['order_id'])){
                        
                    }else{
                        
-                       echo "Welcome: " . $_SESSION['customer_email'] . "";
+                    //    echo "Welcome: " . $_SESSION['customer_email'] . "";
+                    echo"Welcome : $customer_name";
                        
                    }
                    
@@ -117,8 +131,9 @@ if(isset($_GET['order_id'])){
                 <a href="../index.php" class="navbar-brand home">
                     <!-- navbar-brand home Begin -->
 
-                    <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
-                    <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                    <!-- <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
+                    <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs"> -->
+                    <img class="header-logo" src="images/logo2.png" alt="M-dev-Store Logo" class="hidden-xs">
 
                 </a><!-- navbar-brand home Finish -->
 
@@ -169,7 +184,7 @@ if(isset($_GET['order_id'])){
 
                 </div><!-- padding-nav Finish -->
 
-                <a href="../cart.php" class="btn navbar-btn btn-primary right">
+                <a href="../cart.php" class="btn navbar-btn btn-name-cart right">
                     <!-- btn navbar-btn btn-primary Begin -->
 
                     <i class="fa fa-shopping-cart"></i>
@@ -181,13 +196,13 @@ if(isset($_GET['order_id'])){
                 <div class="navbar-collapse collapse right">
                     <!-- navbar-collapse collapse right Begin -->
 
-                    <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse"
+                    <button class="btn btn-name-cart navbar-btn" type="button" data-toggle="collapse"
                         data-target="#search">
                         <!-- btn btn-primary navbar-btn Begin -->
 
                         <span class="sr-only">Toggle Search</span>
 
-                        <i class="fa fa-search"></i>
+                        <i class="fa fa-search "></i>
 
                     </button><!-- btn btn-primary navbar-btn Finish -->
 

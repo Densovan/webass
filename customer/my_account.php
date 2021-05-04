@@ -26,13 +26,12 @@ include("functions/functions.php");
 </head>
 
 <body>
-
+    
     <div id="top">
         <!-- Top Begin -->
 
         <div class="container">
-            <!-- container Begin -->
-
+            <!-- container Begin -->    
             <div class="col-md-6 offer">
                 <!-- col-md-6 offer Begin -->
 
@@ -113,7 +112,6 @@ $customer_session = $_SESSION['customer_email'];
         </div><!-- container Finish -->
 
     </div><!-- Top Finish -->
-
     <div id="navbar" class="navbar navbar-default">
         <!-- navbar navbar-default Begin -->
 
@@ -206,7 +204,7 @@ $customer_session = $_SESSION['customer_email'];
                 <div class="collapse clearfix" id="search">
                     <!-- collapse clearfix Begin -->
 
-                    <form method="get" action="results.php" class="navbar-form">
+                    <form method="post" action="result.php" class="navbar-form">
                         <!-- navbar-form Begin -->
 
                         <div class="input-group">
@@ -237,7 +235,10 @@ $customer_session = $_SESSION['customer_email'];
         </div><!-- container Finish -->
 
     </div><!-- navbar navbar-default Finish -->
-
+    <?php 
+        echo $_SESSION["login_msg"];
+        $_SESSION["login_msg"] = "";
+    ?>
     <div id="content">
         <!-- #content Begin -->
         <div class="container">

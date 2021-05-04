@@ -5,6 +5,11 @@
 
 ?>
 
+
+<?php
+    echo $_SESSION['signup_msg'];
+    $_SESSION['signup_msg'] = '<span> </span>';
+?>
 <div id="content">
     <!-- #content Begin -->
     <div class="container">
@@ -162,7 +167,6 @@
 
 </html>
 
-
 <?php 
 
 if(isset($_POST['register'])){
@@ -170,56 +174,65 @@ if(isset($_POST['register'])){
     $c_name = $_POST['c_name'];
     
     $c_email = $_POST['c_email'];
+    $database = mysqli_connect("localhost","root","","ecom_store");
+    $query = "SELECT * FROM customers WHERE  customer_name LIKE '%$c_name%' OR customer_email LIKE '%$c_email%' ";
+    $row_customer = mysqli_query($database, $query);
+    $user_count = mysqli_num_rows($row_customer);
+    if ($user_count > 0) {
+        $_SESSION["signup_msg"] ='<div class="container"> <div class="alert alert-danger alert-dismissible">
+        <span> Username or Email already exist. please try another one. </span>
+    </div></div>'; 
+    }else {
+        $_SESSION["signup_msg"] = '<div class="container"> <div class="alert alert-success alert-dismissible">
+        <span> You have been register successfuly. </span>
+    </div></div>';
+        $c_pass = $_POST['c_pass'];
     
-    $c_pass = $_POST['c_pass'];
-    
-    $c_country = $_POST['c_country'];
-    
-    $c_city = $_POST['c_city'];
-    
-    $c_contact = $_POST['c_contact'];
-    
-    $c_address = $_POST['c_address'];
-    
-    $c_image = $_FILES['c_image']['name'];
-    
-    $c_image_tmp = $_FILES['c_image']['tmp_name'];
-    
-    $c_ip = getRealIpUser();
-    
-    move_uploaded_file($c_image_tmp,"customer/customer_images/$c_image");
-    
-    $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_address,customer_image,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_contact','$c_address','$c_image','$c_ip')";
-    
-    $run_customer = mysqli_query($con,$insert_customer);
-    
-    $sel_cart = "select * from cart where ip_add='$c_ip'";
-    
-    $run_cart = mysqli_query($con,$sel_cart);
-    
-    $check_cart = mysqli_num_rows($run_cart);
-    
-    if($check_cart>0){
+        $c_country = $_POST['c_country'];
         
-        /// If register have items in cart ///
+        $c_city = $_POST['c_city'];
         
-        $_SESSION['customer_email']=$c_email;
+        $c_contact = $_POST['c_contact'];
         
-        echo "<script>alert('You have been Registered Sucessfully')</script>";
+        $c_address = $_POST['c_address'];
         
-        echo "<script>window.open('checkout.php','_self')</script>";
+        $c_image = $_FILES['c_image']['name'];
         
-    }else{
+        $c_image_tmp = $_FILES['c_image']['tmp_name'];
         
-        /// If register without items in cart ///
+        $c_ip = getRealIpUser();
         
-        $_SESSION['customer_email']=$c_email;
+        move_uploaded_file($c_image_tmp,"customer/customer_images/$c_image");
         
-        echo "<script>alert('You have been Registered Sucessfully')</script>";
+        $insert_customer = "insert into customers (customer_name,customer_email,customer_pass,customer_country,customer_city,customer_contact,customer_address,customer_image,customer_ip) values ('$c_name','$c_email','$c_pass','$c_country','$c_city','$c_contact','$c_address','$c_image','$c_ip')";
         
-        echo "<script>window.open('index.php','_self')</script>";
+        $run_customer = mysqli_query($con,$insert_customer);
         
+        $sel_cart = "select * from cart where ip_add='$c_ip'";
+        
+        $run_cart = mysqli_query($con,$sel_cart);
+        
+        $check_cart = mysqli_num_rows($run_cart);
+        
+        if($check_cart>0){
+            
+            /// If register have items in cart ///
+            
+            $_SESSION['customer_email']=$c_email;
+            
+            echo "<script>window.open('checkout.php','_self')</script>";
+            
+        }else{
+            
+            /// If register without items in cart ///
+            
+            $_SESSION['customer_email']=$c_email;
+            
+            echo "<script>window.open('index.php','_self')</script>";
+            
+        }
     }
+   
     
 }
 
