@@ -146,29 +146,7 @@
 
             </li><!-- li finish -->
 
-            <li>
-                <!-- li begin -->
-                <a href="#" data-toggle="collapse" data-target="#manufacturer">
-                    <!-- a href begin -->
 
-                    <i class="fa fa-fw fa-star"></i> manufacturer
-                    <i class="fa fa-fw fa-caret-down"></i>
-
-                </a><!-- a href finish -->
-
-                <ul id="manufacturer" class="collapse">
-                    <!-- collapse begin -->
-                    <li>
-                        <!-- li begin -->
-                        <a href="index.php?insert_manufacturer"> Insert manufacturer </a>
-                    </li><!-- li finish -->
-                    <li>
-                        <!-- li begin -->
-                        <a href="index.php?view_manufacturers"> View manufacturer </a>
-                    </li><!-- li finish -->
-                </ul><!-- collapse finish -->
-
-            </li><!-- li finish -->
 
             <li>
                 <!-- li begin -->
@@ -242,29 +220,7 @@
 
             </li><!-- li finish -->
 
-            <li>
-                <!-- li begin -->
-                <a href="#" data-toggle="collapse" data-target="#boxes">
-                    <!-- a href begin -->
 
-                    <i class="fa fa-fw fa-dropbox"></i> Boxes
-                    <i class="fa fa-fw fa-caret-down"></i>
-
-                </a><!-- a href finish -->
-
-                <ul id="boxes" class="collapse">
-                    <!-- collapse begin -->
-                    <li>
-                        <!-- li begin -->
-                        <a href="index.php?insert_box"> Insert Box </a>
-                    </li><!-- li finish -->
-                    <li>
-                        <!-- li begin -->
-                        <a href="index.php?view_boxes"> View Boxes </a>
-                    </li><!-- li finish -->
-                </ul><!-- collapse finish -->
-
-            </li><!-- li finish -->
 
             <li>
                 <!-- li begin -->

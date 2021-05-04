@@ -239,7 +239,7 @@ $customer_session = $_SESSION['customer_email'];
                 <div class="collapse clearfix" id="search">
                     <!-- collapse clearfix Begin -->
 
-                    <form method="get" action="results.php" class="navbar-form">
+                    <form method="post" action="result.php" class="navbar-form">
                         <!-- navbar-form Begin -->
 
                         <div class="input-group">
