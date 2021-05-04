@@ -4,9 +4,7 @@
     include("includes/header.php");
     include "sendmail.php";
 ?>
-<?php 
-    echo $alert;
-?>
+
 <div id="content">
     <!-- #content Begin -->
     <div class="container">
@@ -46,7 +44,7 @@
                 <div class="box-header">
                     <!-- box-header Begin -->
 
-                    <center>
+                    <center>Your message has sent sucessfully
                         <!-- center Begin -->
 
                         <h2> Feel free to Contact Us</h2>
@@ -143,7 +141,8 @@
                            
                            mail($email,$subject,$msg,$from);
                            
-                           echo "<h2 align='center'> Your message has sent sucessfully </h2>";
+                           echo "<h2 align='center'> $alert</h2>";
+                        
                            
                        }
                        
@@ -164,9 +163,9 @@
     
     ?>
 <script type="text/javascript">
-    if (window.history.replaceState) {
-        window.history.replaceState(null, null, window.location.href);
-    }
+if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+}
 </script>
 <script src="js/jquery-331.min.js"></script>
 <script src="js/bootstrap-337.min.js"></script>
