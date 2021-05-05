@@ -1,4 +1,3 @@
-
 <?php 
 $login_alert = '';
 if(isset($_POST['login'])){
@@ -23,9 +22,9 @@ if(isset($_POST['login'])){
     
     if($check_customer==0){
         
-        $login_alert = '<div class="alert  alert-danger alert-dismissable">
+        $login_alert = '<center class="alert  alert-danger alert-dismissable">
         <strong>Failed!</strong> your email or password do not match .
-      </div>';
+      </center>';
         echo $login_alert;
         exit();
         
@@ -36,9 +35,9 @@ if(isset($_POST['login'])){
         $_SESSION['customer_email']=$customer_email;
         $_SESSION['customer_name']=$customer_name;
         
-        $login_alert = '<div class="alert alert-success alert-dismissable">
+        $login_alert = '<center class="alert alert-success alert-dismissable">
         <strong>Success!</strong> logged in successfully .
-      </div>';
+      </center>';
         $_SESSION['login_msg'] = $login_alert;
        echo "<script>window.open('customer/my_account.php?my_orders','_self')</script>";
         
@@ -47,9 +46,9 @@ if(isset($_POST['login'])){
         $_SESSION['customer_email']=$customer_email;
         $_SESSION['customer_name']=$customer_name;
         
-        $login_alert = '<div class="alert alert-success alert-dismissable">
+        $login_alert = '<center class="alert alert-success alert-dismissable">
         <strong>Success!</strong> You are logged in .
-      </div>';
+      </center>';
         $_SESSION["login_msg"]= $login_alert;
        echo "<script>window.open('checkout.php','_self')</script>";
         

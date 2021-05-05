@@ -1,4 +1,3 @@
-
 <center>
     <!--  center Begin  -->
 
@@ -111,6 +110,7 @@ echo $login_alert;
                 <td> <?php echo $order_status; ?> </td>
 
                 <td>
+
 
                     <a href="confirm.php?order_id=<?php echo $order_id; ?>" target="_blank"
                         class="btn view-detail btn-sm"> Confirm Paid </a>

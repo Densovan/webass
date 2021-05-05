@@ -23,6 +23,7 @@
         <a href="order.php?c_id=<?php echo $customer_id ?>"> Offline Payment </a>
 
     </p><!-- lead text-center Finish -->
+    <hr>
 
     <center>
         <!-- center Begin -->
@@ -34,7 +35,7 @@
 
                 Paypall Payment
 
-                <img class="img-responsive" src="images/paypall_img.png" alt="img-paypall">
+                <img class="img-responsive" src="images/paypal-logo.png" alt="img-paypall">
 
             </a>
 

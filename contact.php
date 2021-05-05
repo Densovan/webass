@@ -44,7 +44,7 @@
                 <div class="box-header">
                     <!-- box-header Begin -->
 
-                    <center>Your message has sent sucessfully
+                    <center>
                         <!-- center Begin -->
 
                         <h2> Feel free to Contact Us</h2>
